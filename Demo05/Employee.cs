@@ -8,12 +8,17 @@ namespace Demo05
 {
     internal class Employee
     {
-        public string FirstName { get; set; } = null;
-        public string? LastName { get; set; } = null;
+        public int Id { get; set; }
+        public string? Name { get; set; }
 
-        public Employee()
-        {
-            //FirstName = "";
-        }
+        public Department Department { get; set; }
+      
+    }
+
+    class Department
+    {
+        public int Code { get; set; }
+        public string Name { get; set; }
+
     }
 }

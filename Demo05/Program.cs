@@ -137,6 +137,67 @@
             #endregion
 
             #endregion
+
+            #region Null Propagation/ Coleasceing operator 
+
+            #region EX01
+            ////int[] Numbers = default; // Null
+
+            ////for (int i = 0; Numbers != null && i < Numbers.Length; i++)
+            ////{
+            ////    Console.WriteLine(Numbers[i]); // Null reference exception handled poorly
+            ////}
+
+            ////for (int i = 0; i < Numbers?.Length; i++)
+            ////{
+            ////    Console.WriteLine(Numbers[i]); // Null reference exception handled poorly
+            ////}
+
+            ////if(Numbers != null)
+            ////{
+            ////    for (int i = 0; i < Numbers.Length; i++)
+            ////    {
+            ////        Console.WriteLine(Numbers[i]); // Null reference exception handled correctly
+            ////    }
+            ////}
+
+
+            ////foreach ( int Num in Numbers)
+            ////{
+            ////    Console.WriteLine(Num); // Null reference exception not handled
+            ////}
+
+            //// NUmbers = null -> (Numbers?.Length) => null
+            //// Numbers != null -> (Numbers?.Length) => Numbers.Length
+
+
+            //// null propagation operator ?
+
+            //// null coalescing operator ??
+
+            ////int Length = Numbers?.Length ?? 0; // 0 
+            #endregion
+
+            #region EX02
+
+            //Employee Emp1 = new Employee();
+            // Emp1 (id = 0, Name = null, Department = null)
+
+            // Emp1.Department = new Department();
+            // Emp1 (id = 0, Name = null, Department = (Code = 0, Name = null))
+
+            //if (Emp1 != null)
+            //{
+            //    if (Emp1.Department != null)
+            //    {
+            //        Console.WriteLine(Emp1.Department.Name); // Null reference exception handled
+            //    }
+            //}
+
+            // Console.WriteLine(Emp1?.Department?.Name ?? "Department Not Found"); // Null reference exception handled
+            #endregion
+
+            #endregion
         }
     }
 }
