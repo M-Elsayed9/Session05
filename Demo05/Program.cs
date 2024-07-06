@@ -67,42 +67,71 @@
             #endregion
 
             #region EX02
-            int X = 10;
-            int? Y = X; //Valid implicit casting
+            //int X = 10;
+            //int? Y = X; //Valid implicit casting
 
-            int? Num01 = null;
-            int Num02 = (int)Num01; // Explicit casting (unsafe casting)
-            //invalid operartion => exception
+            //int? Num01 = null;
+            //int Num02 = (int)Num01; // Explicit casting (unsafe casting)
+            ////invalid operartion => exception
 
-            int? K = null;
-            int L;
-            L = (int)K; // (unsafe)
+            //int? K = null;
+            //int L;
+            //L = (int)K; // (unsafe)
 
-            if (K != null)
-            {
-                L = (int)K; //Casting safe
-            }
-            else
-            {
-                L = 0;
-            }
+            //if (K != null)
+            //{
+            //    L = (int)K; //Casting safe
+            //}
+            //else
+            //{
+            //    L = 0;
+            //}
 
-            // or
+            //// or
 
-            if (K.HasValue)
-            {
-                L = K.Value; // Not Casting (safe)
-            }
-            else
-            {
-                L = 0;
-            }
+            //if (K.HasValue)
+            //{
+            //    L = K.Value; // Not Casting (safe)
+            //}
+            //else
+            //{
+            //    L = 0;
+            //}
 
             //or 
 
-            L = K.HasValue ? K.Value : 0;
-            L = L != null ? (int)K : 0;
+            //L = K.HasValue ? K.Value : 0;
+            //L = L != null ? (int)K : 0;
 
+            #endregion
+
+            #endregion
+
+            #region Reference Type C# 8.0 2019
+            // Null is default value of reference type
+            // STRING IS NON NULLABLE REFERENCE TYPE
+            #region EX01
+            //string Message; // null
+
+            //Message = null; // valid with warning
+            //Message = null!; // null -forgiving operator
+
+            //string? Message2 = null; // nullable reference type
+            //// valid without warning
+
+            //Console.WriteLine(Message); // null 
+            #endregion
+
+            #region EX02
+            //Employee Emp = new Employee();
+
+            //string NotNull = "Hello";
+
+            //string? NullableString = default;
+
+            // NullableString = NotNull; // valid
+            //NotNull = NullableString; // valid
+            // NotNull = NullableString; // invalid 
             #endregion
 
             #endregion
