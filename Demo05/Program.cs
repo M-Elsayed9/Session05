@@ -1,7 +1,28 @@
 ﻿namespace Demo05
 {
+    // can write 4 types of things in a namespace
+    // 1. Class (Reference Type)
+    // 2. Struct (Value Type)
+    // 3. Interface (Reference Type)
+    // 4. Enum (Value Type)
     internal class Program
     {
+        //Class can contain 
+        // 1. Functions
+        // 2. Data
+
+        // 1. Function 
+        // 1.1 Class member function (static function)
+        // 1.2 Object member function (Non-static function) instance function
+
+        // (*_*) -> 10
+        public static void PrintShape(int Count = 10, string Pattern = "*_*") // must give default values at the end 
+        {
+            for(int i = 0; i < Count; i++)
+                Console.WriteLine(Pattern);
+        }
+
+        // Entry Point
         static void Main(string[] args)
         {
             // Session 05
@@ -198,6 +219,38 @@
             #endregion
 
             #endregion
+
+            #region Functions
+            // printShape(); without parameters
+            // PrintShape(10, "*_*"); // Passing Parameters with order
+            // PrintShape("*_*", 10); // invalid
+            // PrintShape(Pattern: "*_*", Count: 10); // Passing Parameters By name
+
+            // PrintShape(); // using default values
+            // PrintShape(Count: 5); // using default values
+            // PrintShape(Pattern: "A_B"); // using default values
+
+            //Hello to Route
+            // Welcome Aliaa
+
+            // Console.WriteLine("Hello to Route\nWelcome \t Aliaa");
+            // \n => new line
+            // \t => tab
+
+            // C:\Users\muham\source\repos\Session05\Demo05\Demo05.csproj
+
+            // string Path = "C:\\Users\\muham\\source\\repos\\Session05\\Demo05\\Demo05.csproj";
+            // string Path1 = @"C:\Users\muham\source\repos\Session05\Demo05\Demo05.csproj";
+            // Skipping the escape character
+            // Skip \ => \\
+            // Skip \ => @
+
+            // 10 -> /*\ 
+            // PrintShape("/*\", 10); // invalid
+            // PrintShape(10, @"/*\"); 
+            #endregion
         }
+
+
     }
 }
