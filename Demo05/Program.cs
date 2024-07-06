@@ -16,11 +16,19 @@
         // 1.2 Object member function (Non-static function) instance function
 
         // (*_*) -> 10
-        public static void PrintShape(int Count = 10, string Pattern = "*_*") // must give default values at the end 
-        {
-            for(int i = 0; i < Count; i++)
-                Console.WriteLine(Pattern);
-        }
+        //public static void PrintShape(int Count = 10, string Pattern = "*_*") // must give default values at the end 
+        //{
+        //    for(int i = 0; i < Count; i++)
+        //        Console.WriteLine(Pattern);
+        //}
+
+
+        //public static void Swap(ref int X, ref int Y)
+        //{
+        //    int Temp = X;
+        //    X = Y;
+        //    Y = Temp;
+        //}
 
         // Entry Point
         static void Main(string[] args)
@@ -220,7 +228,11 @@
 
             #endregion
 
-            #region Functions
+            #region Functions 
+
+            #region Passing parameters
+            
+            #region EX01
             // printShape(); without parameters
             // PrintShape(10, "*_*"); // Passing Parameters with order
             // PrintShape("*_*", 10); // invalid
@@ -247,7 +259,35 @@
 
             // 10 -> /*\ 
             // PrintShape("/*\", 10); // invalid
-            // PrintShape(10, @"/*\"); 
+            // PrintShape(10, @"/*\");   
+            #endregion
+
+            #region Passing value type parameters
+            // int, double, float, decimal, char, bool, struct
+
+            #region Passing by value
+            //int A = 10;
+            //int B = 20;
+            //Console.WriteLine($"A = {A}, B = {B}"); // A = 10, B = 20
+
+            //Swap(A, B); // passing by value only and not by reference
+            //Console.WriteLine($"A = {A}, B = {B}"); // A = 10, B = 20
+            #endregion
+
+            #region Passing by reference
+            //int A = 10;
+            //int B = 20;
+            //Console.WriteLine($"A = {A}, B = {B}"); // A = 10, B = 20
+
+            //Swap(ref A, ref B); // passing by reference input/output
+            //Console.WriteLine($"A = {A}, B = {B}"); // A = 10, B = 20
+
+            #endregion
+
+            #endregion
+
+            #endregion
+
             #endregion
         }
 
