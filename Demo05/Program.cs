@@ -1,4 +1,6 @@
-﻿namespace Demo05
+﻿using System.Reflection.Metadata.Ecma335;
+
+namespace Demo05
 {
     // can write 4 types of things in a namespace
     // 1. Class (Reference Type)
@@ -54,18 +56,38 @@
         //    return Sum;
         //}
 
-        public static int SumArray(ref int[] Arr)
-        {
-            int sum = 0;
-            if (Arr is not null)
-            {
-                Arr = new int[] {4, 5, 6 };
-                for (int i = 0; i < Arr.Length; i++)
-                    sum += Arr[i];
-            }
-            return sum;
-        }
+        //public static int SumArray(ref int[] Arr)
+        //{
+        //    int sum = 0;
+        //    if (Arr is not null)
+        //    {
+        //        Arr = new int[] {4, 5, 6 };
+        //        for (int i = 0; i < Arr.Length; i++)
+        //            sum += Arr[i];
+        //    }
+        //    return sum;
+        //}
 
+        //static Data SumMul(int x, int y)
+        //{
+        //    int Sum = x + y;
+        //    int Mul = x * y;
+        //    Data D = new Data();
+        //    D.Sum = Sum;
+        //    D.Mul = Mul;
+
+        //    // return D; // or
+        //    return new Data() { Sum = Sum,, Mul = Mul };
+
+        //}
+
+        //static void SumMul(int x, int y, out int Sum, out int Mul)
+        //{
+        //    Sum = x + y; 
+        //    Mul = x * y; // must return both out put parameters 
+            
+
+        //}
         // Entry Point
         static void Main(string[] args)
         {
@@ -369,6 +391,23 @@
             #endregion
 
             #endregion
+
+            #region Passing by out
+
+            //int A = 10, B = 20;
+
+            //int Sum, Mul;
+
+            //SumMul(A, B, out Sum, out Mul); // the out params are passed by reference by default
+            ////SumMul(A, B, ref Sum, ref Mul); // must be initialized before passing by ref
+
+            //Console.WriteLine($"Sum = {Sum}, Mul = {Mul}");
+
+            // Out => Out parameter
+            // Ref => input output parameter
+            #endregion
+
+
 
             #endregion
 
