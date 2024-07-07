@@ -30,6 +30,42 @@
         //    Y = Temp;
         //}
 
+        //public static int SumArray(int[] Arr)
+        //{
+        //    int Sum = 0;
+        //    if (Arr is not null)
+        //    {
+        //        Arr[0] = 100;
+        //        for (int i = 0; i < Arr.Length; i++)
+        //            Sum += Arr[i];
+        //    }
+        //    return Sum;
+        //}
+
+        //public static int SumArray(ref int[] Arr)
+        //{
+        //    int Sum = 0;
+        //    if (Arr is not null)
+        //    {
+        //        Arr[0] = 100;
+        //        for (int i = 0; i < Arr.Length; i++)
+        //            Sum += Arr[i];
+        //    }
+        //    return Sum;
+        //}
+
+        public static int SumArray(ref int[] Arr)
+        {
+            int sum = 0;
+            if (Arr is not null)
+            {
+                Arr = new int[] {4, 5, 6 };
+                for (int i = 0; i < Arr.Length; i++)
+                    sum += Arr[i];
+            }
+            return sum;
+        }
+
         // Entry Point
         static void Main(string[] args)
         {
@@ -231,7 +267,7 @@
             #region Functions 
 
             #region Passing parameters
-            
+
             #region EX01
             // printShape(); without parameters
             // PrintShape(10, "*_*"); // Passing Parameters with order
@@ -281,6 +317,54 @@
 
             //Swap(ref A, ref B); // passing by reference input/output
             //Console.WriteLine($"A = {A}, B = {B}"); // A = 10, B = 20
+
+            #endregion
+
+            #endregion
+
+            #region Passing reference type parameters
+            // string, class, interface, enum, array
+
+            #region by value
+            //int[] Nums = { 1, 2, 3, 4, 5 };
+            // Nums -> Reference [Address of Array] 
+
+            //int Sum = SumArray(Nums); //passing by value  arr = nums
+
+            //Console.WriteLine(Sum);
+            #endregion
+
+            #region By reference
+
+            #region EX01
+            //int[] Nums = { 1, 2, 3, 4, 5 };
+
+            //Console.WriteLine(Nums[0]); // 1
+            //int Sum = SumArray( ref Nums); //passing by reference  arr = nums
+            //Console.WriteLine(Nums[0]); // 100 
+            #endregion
+
+            #region EX02
+
+            #region By value
+            //int[] Nums = { 1, 2, 3, 4, 5 };
+
+            //Console.WriteLine(Nums[0]); // 1
+            //int Sum = SumArray(Nums); //passing by value  arr = adress of nums
+            //Console.WriteLine(Nums[0]); // 1  
+
+
+            #endregion
+
+            #region By reference
+            //int[] Nums = { 1, 2, 3, 4, 5 };
+
+            //Console.WriteLine(Nums[0]); // 1
+            //int Sum = SumArray(ref Nums); //passing by value  arr = adress of nums
+            //Console.WriteLine(Nums[0]); // 1
+            #endregion
+
+            #endregion
 
             #endregion
 
