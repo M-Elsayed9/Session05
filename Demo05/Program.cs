@@ -32,12 +32,12 @@ namespace Demo05
         //    Y = Temp;
         //}
 
-        //public static int SumArray(int[] Arr)
+        //public static int SumArray( int[] Arr)
         //{
         //    int Sum = 0;
         //    if (Arr is not null)
         //    {
-        //        Arr[0] = 100;
+        //        // Arr[0] = 100;
         //        for (int i = 0; i < Arr.Length; i++)
         //            Sum += Arr[i];
         //    }
@@ -85,7 +85,19 @@ namespace Demo05
         //{
         //    Sum = x + y; 
         //    Mul = x * y; // must return both out put parameters 
-            
+
+
+        //public static int SumArray(/*int X, int Y,*/ params int[] Arr) // X = 1, Y =2, Arr = { }
+        //{
+        //    int Sum = 0;
+        //    if (Arr is not null)
+        //    {
+        //        // Arr[0] = 100;
+        //        for (int i = 0; i < Arr.Length; i++)
+        //            Sum += Arr[i];
+        //    }
+        //    return Sum;
+        //}
 
         //}
         // Entry Point
@@ -407,7 +419,20 @@ namespace Demo05
             // Ref => input output parameter
             #endregion
 
+            #region Passing Params
+            //int[] Nums = { 1, 2, 3, 4, 5 };
+            //int Result = SumArray(1, 2, 3, 4, 5, 6, 7);
+            //Console.WriteLine(Result);
 
+            ////int Sum = SumArray(Nums); // 15
+
+            //// 10 +30 + 5 = 45 Test
+            //int a = 10, b = 5, c = 30, d = 45;
+            //string Name = "Test";
+
+            //Console.WriteLine("{0} + {1} + {3} = {2} {4}" , a, b, d, c, Name);
+
+            #endregion
 
             #endregion
 
