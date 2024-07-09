@@ -3,6 +3,7 @@ using System.Data.Common;
 using System.Reflection.Metadata;
 using System.Security.Cryptography;
 using System.Threading.Channels;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Assignment05
 {
@@ -71,6 +72,20 @@ namespace Assignment05
         //    MinusResult = X - Y;
 
         //}
+
+        //static int SumOfDigits(int num)
+        //{
+        //    int sum = 0;
+
+        //    while (num != 0)
+        //    {
+        //        sum += num % 10; 
+        //        num /= 10; 
+        //    }
+
+        //    return sum;
+        //}
+
         static void Main(string[] args)
         {
             #region Question 1
@@ -155,7 +170,17 @@ namespace Assignment05
             #endregion
 
             #region Question 4
+            // 4 - Write a program in C# Sharp to create a function to calculate the sum of the individual digits of a given number.
+            // Output should be like
+            // Enter a number: 25
+            // The sum of the digits of the number 25 is: 7
+            
+            //Console.Write("Enter a digit: ");
+            //int Digit = int.Parse(Console.ReadLine());
 
+            //int sum = SumOfDigits(Digit);
+
+            //Console.WriteLine(sum);
             #endregion
 
             #region Question 5
