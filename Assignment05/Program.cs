@@ -86,6 +86,23 @@ namespace Assignment05
         //    return sum;
         //}
 
+        //static bool IsPrime(int num)
+        //{
+        //    if (num <= 1)
+        //    {
+        //        return false;
+        //    }
+
+        //    for (int i = 2; i * i <= num; i++)
+        //    {
+        //        if (num % i == 0)
+        //        {   
+        //            return false;
+        //        }
+        //    }
+        //    return true;
+        //}
+
         static void Main(string[] args)
         {
             #region Question 1
@@ -174,7 +191,7 @@ namespace Assignment05
             // Output should be like
             // Enter a number: 25
             // The sum of the digits of the number 25 is: 7
-            
+
             //Console.Write("Enter a digit: ");
             //int Digit = int.Parse(Console.ReadLine());
 
@@ -184,18 +201,43 @@ namespace Assignment05
             #endregion
 
             #region Question 5
+            // 5-	Create a function named "IsPrime", which receives an integer number
+            // and retuns true if it is prime, or false if it is not:
+
+            //Console.Write("Enter a number: ");
+            //int Num = int.Parse(Console.ReadLine());
+
+            //bool Prime = Program.IsPrime(Num);
+
+            //if (Prime)
+            //{
+            //    Console.WriteLine($"{Num} is a prime number.");
+            //}
+            //else
+            //{
+            //    Console.WriteLine($"{Num} is not a prime number.");
+            //}
 
             #endregion
 
             #region Question 6
+            // 6-	Create a function named MinMaxArray, to return the minimum
+            // and maximum values stored in an array, using reference parameters
+
 
             #endregion
 
             #region Question 7
+            //7-	Create an iterative (non-recursive) function to calculate the
+            //factorial of the number specified as parameter
+
 
             #endregion
 
             #region Question 8
+            // 8-	Create a function named "ChangeChar" to modify a letter in a certain position
+            // (0 based) of a string, replacing it with a different letter
+
 
             #endregion
         }
