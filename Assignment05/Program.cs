@@ -63,6 +63,14 @@ namespace Assignment05
 
         //    return sum;
         //}
+
+        //static void SumMinus(int X, int Y, out int SumResult, out int MinusResult)
+        //{
+        //    SumResult = X + Y;
+
+        //    MinusResult = X - Y;
+
+        //}
         static void Main(string[] args)
         {
             #region Question 1
@@ -135,7 +143,14 @@ namespace Assignment05
 
             #region Question 3
 
+            // 3 - Write a c# Function that accept 4 parameters from user and
+            // return result of summation and subtracting of two numbers
 
+            //int X = 10, Y = 20, SumResult, MinusResult;
+
+            //SumMinus(X, Y, out SumResult, out MinusResult);
+
+            //Console.WriteLine($"Sum Result: {SumResult}, Minus Result: {MinusResult} ");
 
             #endregion
 
