@@ -9,22 +9,60 @@ namespace Assignment05
     internal class Program
     {
 
-        static int Sum(int X, int Y)
-        {
-            X++;
-            Y++;
+        //static int Sum(int X, int Y)
+        //{
+        //    X++;
+        //    Y++;
 
-            return X + Y; 
-        
-        }
+        //    return X + Y; 
 
-        static int Sum1(ref int X, ref int Y)
-        {
-            X++;
-            Y++;
+        //}
 
-            return X + Y; 
-        }
+        //static int Sum1(ref int X, ref int Y)
+        //{
+        //    X++;
+        //    Y++;
+
+        //    return X + Y; 
+        //}
+
+        //static int Sum(int[] Nums)
+        //{
+        //    int sum = 0;
+
+        //    for(int i = 0; i < Nums.Length; i++) // affects the original object
+        //    {
+        //        Nums[i]++;
+        //    }
+
+        //    Nums = new int[] {10, 20, 30 ,40, 50 }; // does not affect the original object and does not change its reference 
+
+        //    for (int i = 0; i < Nums.Length; i++)
+        //    {
+        //        sum += Nums[i];
+        //    }
+
+        //    return sum;
+        //}
+
+        //static int Sum1(ref int[] Nums)
+        //{
+        //    int sum = 0;
+
+        //    for (int i = 0; i < Nums.Length; i++) // affects the original object
+        //    {
+        //        Nums[i]++;
+        //    }
+
+        //    Nums = new int[] { 10, 20, 30, 40, 50 }; // does affect the original object and change its reference 
+
+        //    for (int i = 0; i < Nums.Length; i++)
+        //    {
+        //        sum += Nums[i];
+        //    }
+
+        //    return sum;
+        //}
         static void Main(string[] args)
         {
             #region Question 1
@@ -62,8 +100,37 @@ namespace Assignment05
             //2 - Explain the difference between passing(Reference type parameters)
             //by value and by reference then write a suitable c# example.
 
+            // By Value
+            //When a reference type parameter is passed by value, a copy of the reference(not the object)
+            //is passed to the method. This means the method works with the same object, but reassigning
+            //the parameter to a new object inside the method does not affect the original reference.
 
+            //int[] Nums = { 1, 2, 3, 4, 5 };
 
+            //int Result = Sum(Nums);
+
+            //foreach (int i in Nums)
+            //{
+            //    Console.WriteLine(i);
+            //}
+
+            //Console.WriteLine(Result);
+
+            //By Reference
+            //When a reference type parameter is passed by reference using the ref keyword,
+            //the method can modify the reference itself, making it point to a different object.
+            //Any changes to the object itself will still affect the original reference.
+
+            //int[] Nums = { 1, 2, 3, 4, 5 };
+
+            //int Result = Sum1(ref Nums);
+
+            //foreach (int i in Nums)
+            //{
+            //    Console.WriteLine(i);
+            //}
+
+            //Console.WriteLine(Result);
             #endregion
 
             #region Question 3
