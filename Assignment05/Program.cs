@@ -102,11 +102,17 @@ namespace Assignment05
         //    return true;
         //}
 
-        static void SumSub(int x, int y, out int sum, out int sub)
-        {
-            sum = x + y;
-            sub = x - y;
-        }
+        //static long Factorial(int n)
+        //{
+        //    long ans = 1;
+
+        //    for(int i = 1; i <= n; i++)
+        //    {
+        //        ans *= i;
+        //    }
+
+        //    return ans;
+        //}
 
         static string ChangeChar(string s, int pos, char c)
         {
@@ -246,19 +252,18 @@ namespace Assignment05
             #region Question 7
             //7-	Create an iterative (non-recursive) function to calculate the
             //factorial of the number specified as parameter
-            //int sum, sub;
-             
-            //SumSub(1, 2, out sum, out sub);
-            //Console.WriteLine(sum);
-            //Console.WriteLine(sub);
+
+
+            //Console.WriteLine(Factorial(4));
+
             #endregion
+
 
             #region Question 8
             // 8-	Create a function named "ChangeChar" to modify a letter in a certain position
             // (0 based) of a string, replacing it with a different letter
 
-
-
+            //Console.WriteLine(ChangeChar("Omar", 2, 'e'));
             #endregion
         }
     }
