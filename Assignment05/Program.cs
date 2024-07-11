@@ -9,7 +9,6 @@ namespace Assignment05
 {
     internal class Program
     {
-
         //static int Sum(int X, int Y)
         //{
         //    X++;
@@ -102,6 +101,23 @@ namespace Assignment05
         //    }
         //    return true;
         //}
+
+        static void SumSub(int x, int y, out int sum, out int sub)
+        {
+            sum = x + y;
+            sub = x - y;
+        }
+
+        static string ChangeChar(string s, int pos, char c)
+        {
+            char[] chars = s.ToCharArray();
+
+            chars[pos] = c;
+
+            string result = new string(chars);
+
+            return result;
+        }
 
         static void Main(string[] args)
         {
@@ -230,13 +246,17 @@ namespace Assignment05
             #region Question 7
             //7-	Create an iterative (non-recursive) function to calculate the
             //factorial of the number specified as parameter
-
-
+            //int sum, sub;
+             
+            //SumSub(1, 2, out sum, out sub);
+            //Console.WriteLine(sum);
+            //Console.WriteLine(sub);
             #endregion
 
             #region Question 8
             // 8-	Create a function named "ChangeChar" to modify a letter in a certain position
             // (0 based) of a string, replacing it with a different letter
+
 
 
             #endregion
